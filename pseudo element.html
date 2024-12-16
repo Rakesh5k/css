@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>pseudo elements</title>
+        <style>
+            p::before{
+                content: ;
+                display: inline-block;
+                width: 20px;
+                height: 30px;
+                background-color: red;
+                border: none;
+                border-radius: 50px;
+            }
+            p::after{
+                content: "New message";
+                background-color: blue;
+                color: black
+                opacity: 0.5;
+                border-radius:50px;
+                margin: left 9px;
+                padding: 2px;
+                
+            }
+            new css::first-line{
+                    background-color: yellow;
+                }
+        </style>
+        <head>
+            <p id="chat">loren ipsum</p>
+            <p id="new css">pseudo will not add content in the page,But rather modify the appearance of the existing content</p>
+        </head>
+    </head>
+</html>
