@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>css style tables</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            table{
+                margin: 10px;
+                width: 500px;
+            }
+            table,tr,td,th{
+                border: 10px solid black;
+                border-collapse: collapse;
+                text-align: left;
+                padding: 2px;
+            }
+            th{
+                background-color: red;
+                color: white;
+                font-weight: bold;
+            }
+            tr::nth-child(even){
+                background-color: aliceblue;
+            
+            }
+            td:hover{
+                background-color: aliceblue;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>first name</th>
+                <th>last name</th>
+            </tr>
+            <tr>
+            <td>peter</td>
+            <td>griffin</td>
+            </tr>
+            <tr>
+                <td>rakesh</td>
+                <td>usha</td>
+            </tr>
+            <tr>
+                <td>peter</td>
+                <td>rani</td>
+            </tr>
+        </table>
+    </body>
+</html>
+

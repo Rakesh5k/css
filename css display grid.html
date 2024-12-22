@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>css display grid</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .grid-container{
+                background-color: #2196f3;
+                padding: 10px;
+                display: grid;
+                grid-template-columns:repeat(3,50px);
+                grid-auto-rows: minmax(100px,auto);
+                grid-column-gap: 10px ;
+                grid-row-gap: 10px;
+                height: 100vh;
+                justify-content: start;
+                align-content: space-between;
+            }
+            .grid-item{
+                background-color: rgba(255,255,255,0.8);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid grid-container">
+            <div class="grid-item item-1">1</div>
+            <div class="grid-item item-2">2</div>
+            <div class="grid-item item-3">3</div>
+            <div class="grid-item item-4">4</div>
+            <div class="grid-item item-5">5</div>
+            <div class="grid-item item-6">6</div>
+            <div class="grid-item item-7">7</div>
+            <div class="grid-item item-8">8</div>
+            <div class="grid-item item-9">9</div>
+
+            
+        </div>
+    </body>
+</html>
